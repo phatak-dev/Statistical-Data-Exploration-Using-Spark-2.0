@@ -11,6 +11,7 @@ object ShapeOfDataExample {
             .getOrCreate()
     val lifeExpectancyDF = loadLifeExpectancyData(sparkSession)
     val histogram = lifeExpectancyDF.histogram("LifeExp",5)
-    println(histogram)
+    println(histogram._1.toList)
+    println(histogram._2.toList)
   }
 }
