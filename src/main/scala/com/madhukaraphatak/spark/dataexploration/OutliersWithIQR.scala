@@ -26,9 +26,9 @@ object OutliersWithIQR {
 
    val lowerRange = Q1 - 1.5*IQR
    val upperRange = Q3+ 1.5*IQR
-
    val outliers = df.filter(s"value < $lowerRange or value > $upperRange") 
    outliers.show()
+
    sparkSession.stop()
   }
 
