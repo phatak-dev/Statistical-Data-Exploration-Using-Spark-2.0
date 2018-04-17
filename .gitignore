@@ -7,3 +7,5 @@ dependency-reduced-pom.xml
 *.pdf
 *.swo
 *.swp
+spark-warehouse
+.ipynb_checkpoints
